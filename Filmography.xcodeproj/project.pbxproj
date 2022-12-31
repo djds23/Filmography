@@ -14,6 +14,12 @@
 		7B307967295B756F001D767A /* FilmographyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B307966295B756F001D767A /* FilmographyTests.swift */; };
 		7B307971295B756F001D767A /* FilmographyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B307970295B756F001D767A /* FilmographyUITests.swift */; };
 		7B307973295B756F001D767A /* FilmographyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B307972295B756F001D767A /* FilmographyUITestsLaunchTests.swift */; };
+		7B307983295B76D1001D767A /* ConfigureGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B307982295B76D1001D767A /* ConfigureGame.swift */; };
+		7B307985295B81AA001D767A /* AddPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B307984295B81AA001D767A /* AddPlayerView.swift */; };
+		7B307987295B81D8001D767A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B307986295B81D8001D767A /* GameView.swift */; };
+		7B3079A3295BA08D001D767A /* actors.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B3079A2295BA08D001D767A /* actors.json */; };
+		7B9487BC296004F9001076F7 /* TMDbKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7B9487BB296004F9001076F7 /* TMDbKit */; };
+		7B9487BE29600664001076F7 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B9487BD29600663001076F7 /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,11 @@
 		7B30796C295B756F001D767A /* FilmographyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmographyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B307970295B756F001D767A /* FilmographyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmographyUITests.swift; sourceTree = "<group>"; };
 		7B307972295B756F001D767A /* FilmographyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmographyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B307982295B76D1001D767A /* ConfigureGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureGame.swift; sourceTree = "<group>"; };
+		7B307984295B81AA001D767A /* AddPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerView.swift; sourceTree = "<group>"; };
+		7B307986295B81D8001D767A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		7B3079A2295BA08D001D767A /* actors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = actors.json; sourceTree = "<group>"; };
+		7B9487BD29600663001076F7 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9487BC296004F9001076F7 /* TMDbKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +109,14 @@
 			children = (
 				7B307954295B756E001D767A /* FilmographyApp.swift */,
 				7B307956295B756E001D767A /* ContentView.swift */,
+				7B9487BD29600663001076F7 /* Keys.plist */,
 				7B307958295B756F001D767A /* Assets.xcassets */,
 				7B30795A295B756F001D767A /* Filmography.entitlements */,
 				7B30795B295B756F001D767A /* Preview Content */,
+				7B307982295B76D1001D767A /* ConfigureGame.swift */,
+				7B3079A2295BA08D001D767A /* actors.json */,
+				7B307984295B81AA001D767A /* AddPlayerView.swift */,
+				7B307986295B81D8001D767A /* GameView.swift */,
 			);
 			path = Filmography;
 			sourceTree = "<group>";
@@ -145,6 +162,9 @@
 			dependencies = (
 			);
 			name = Filmography;
+			packageProductDependencies = (
+				7B9487BB296004F9001076F7 /* TMDbKit */,
+			);
 			productName = Filmography;
 			productReference = 7B307951295B756E001D767A /* Filmography.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 7B307948295B756E001D767A;
+			packageReferences = (
+				7B9487BA296004F9001076F7 /* XCRemoteSwiftPackageReference "TMDbKit" */,
+			);
 			productRefGroup = 7B307952295B756E001D767A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9487BE29600664001076F7 /* Keys.plist in Resources */,
+				7B3079A3295BA08D001D767A /* actors.json in Resources */,
 				7B30795D295B756F001D767A /* Preview Assets.xcassets in Resources */,
 				7B307959295B756F001D767A /* Assets.xcassets in Resources */,
 			);
@@ -260,7 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B307957295B756E001D767A /* ContentView.swift in Sources */,
+				7B307983295B76D1001D767A /* ConfigureGame.swift in Sources */,
 				7B307955295B756E001D767A /* FilmographyApp.swift in Sources */,
+				7B307985295B81AA001D767A /* AddPlayerView.swift in Sources */,
+				7B307987295B81D8001D767A /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +457,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -467,7 +495,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -612,6 +640,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B9487BA296004F9001076F7 /* XCRemoteSwiftPackageReference "TMDbKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/djds23/TMDbKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B9487BB296004F9001076F7 /* TMDbKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B9487BA296004F9001076F7 /* XCRemoteSwiftPackageReference "TMDbKit" */;
+			productName = TMDbKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7B307949295B756E001D767A /* Project object */;
 }
