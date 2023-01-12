@@ -62,8 +62,9 @@ class ContentModel: ObservableObject {
         }
 
         let filename = "comFilmographyActors.json"
-        let cacheURL = URL.cachesDirectory.appendingPathExtension(filename)
-        if let data = FileManager.default.contents(atPath: cacheURL.path()) {
+        let cacheURL = URL.cachesDirectory.appending(path: filename)
+        let cachePath = cacheURL.path()
+        if let data = FileManager.default.contents(atPath: cachePath) {
             let decoder = JSONDecoder()
             let cache = try decoder.decode(ContentCache.self, from: data)
             if let updatedAt = cache.lastUpdated,

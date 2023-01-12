@@ -17,7 +17,6 @@
 		7B307983295B76D1001D767A /* ConfigureGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B307982295B76D1001D767A /* ConfigureGame.swift */; };
 		7B307985295B81AA001D767A /* AddPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B307984295B81AA001D767A /* AddPlayerView.swift */; };
 		7B307987295B81D8001D767A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B307986295B81D8001D767A /* GameView.swift */; };
-		7B3079A3295BA08D001D767A /* actors.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B3079A2295BA08D001D767A /* actors.json */; };
 		7B9487BC296004F9001076F7 /* TMDbKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7B9487BB296004F9001076F7 /* TMDbKit */; };
 		7B9487BE29600664001076F7 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B9487BD29600663001076F7 /* Keys.plist */; };
 /* End PBXBuildFile section */
@@ -54,7 +53,6 @@
 		7B307982295B76D1001D767A /* ConfigureGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureGame.swift; sourceTree = "<group>"; };
 		7B307984295B81AA001D767A /* AddPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerView.swift; sourceTree = "<group>"; };
 		7B307986295B81D8001D767A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		7B3079A2295BA08D001D767A /* actors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = actors.json; sourceTree = "<group>"; };
 		7B9487BD29600663001076F7 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +112,6 @@
 				7B30795A295B756F001D767A /* Filmography.entitlements */,
 				7B30795B295B756F001D767A /* Preview Content */,
 				7B307982295B76D1001D767A /* ConfigureGame.swift */,
-				7B3079A2295BA08D001D767A /* actors.json */,
 				7B307984295B81AA001D767A /* AddPlayerView.swift */,
 				7B307986295B81D8001D767A /* GameView.swift */,
 			);
@@ -257,7 +254,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B9487BE29600664001076F7 /* Keys.plist in Resources */,
-				7B3079A3295BA08D001D767A /* actors.json in Resources */,
 				7B30795D295B756F001D767A /* Preview Assets.xcassets in Resources */,
 				7B307959295B756F001D767A /* Assets.xcassets in Resources */,
 			);
